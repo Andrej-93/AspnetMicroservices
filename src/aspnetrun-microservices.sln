@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31205.134
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31825.309
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{076A4E5A-BE04-4CFB-9B20-2D86D3678AA1}"
 EndProject
@@ -23,13 +23,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount.Grpc", "Services\D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{84BEC23D-2887-40E3-A54A-8468CEE55B38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.API", "Services\Ordering\Ordering.API\Ordering.API.csproj", "{BD5D9CD9-FB47-4A36-ACDF-AE7E19ED6551}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.API", "Services\Ordering\Ordering.API\Ordering.API.csproj", "{BD5D9CD9-FB47-4A36-ACDF-AE7E19ED6551}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Domain", "Services\Ordering\Ordering.Domain\Ordering.Domain.csproj", "{8C956507-5813-418A-A48A-A03205454C54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Domain", "Services\Ordering\Ordering.Domain\Ordering.Domain.csproj", "{8C956507-5813-418A-A48A-A03205454C54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Application", "Services\Ordering\Ordering.Application\Ordering.Application.csproj", "{A3357F55-33C1-45D6-B550-1431D6BB3FDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Application", "Services\Ordering\Ordering.Application\Ordering.Application.csproj", "{A3357F55-33C1-45D6-B550-1431D6BB3FDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Infrastructure", "Services\Ordering\Ordering.Infrastructure\Ordering.Infrastructure.csproj", "{CEC0C78C-6921-48D5-B23E-FB98A23749DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Infrastructure", "Services\Ordering\Ordering.Infrastructure\Ordering.Infrastructure.csproj", "{CEC0C78C-6921-48D5-B23E-FB98A23749DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{09F0A9EC-485A-4B29-B0CF-651ADDB379FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Messages", "BuildingBlocks\EventBus.Messages\EventBus.Messages.csproj", "{5F97CD7A-B465-478C-9D87-BD67952973E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +77,10 @@ Global
 		{CEC0C78C-6921-48D5-B23E-FB98A23749DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEC0C78C-6921-48D5-B23E-FB98A23749DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEC0C78C-6921-48D5-B23E-FB98A23749DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F97CD7A-B465-478C-9D87-BD67952973E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F97CD7A-B465-478C-9D87-BD67952973E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F97CD7A-B465-478C-9D87-BD67952973E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F97CD7A-B465-478C-9D87-BD67952973E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +98,7 @@ Global
 		{8C956507-5813-418A-A48A-A03205454C54} = {84BEC23D-2887-40E3-A54A-8468CEE55B38}
 		{A3357F55-33C1-45D6-B550-1431D6BB3FDD} = {84BEC23D-2887-40E3-A54A-8468CEE55B38}
 		{CEC0C78C-6921-48D5-B23E-FB98A23749DE} = {84BEC23D-2887-40E3-A54A-8468CEE55B38}
+		{5F97CD7A-B465-478C-9D87-BD67952973E0} = {09F0A9EC-485A-4B29-B0CF-651ADDB379FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D01F5DE-1793-4204-A142-681ED8333AD3}

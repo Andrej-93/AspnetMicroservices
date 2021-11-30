@@ -7,7 +7,6 @@ using Ordering.Application.Features.Orders.Commands.UpdateOrder;
 using Ordering.Application.Features.Orders.Queries.GetOrdersList;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -17,7 +16,7 @@ namespace Ordering.API.Controllers
     [Route("api/v1/[controller]")]
     public class OrderController : ControllerBase
     {
-        private IMediator _mediator;
+        private readonly IMediator _mediator;
 
         public OrderController(IMediator mediator)
         {
